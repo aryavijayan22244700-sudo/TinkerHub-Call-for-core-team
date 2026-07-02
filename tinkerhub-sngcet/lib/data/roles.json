@@ -1,0 +1,56 @@
+{
+  "deadline": "2026-07-10",
+  "roles": [
+    {
+      "id": "learning-coordinator",
+      "title": "Learning Coordinator",
+      "tagline": "Own how the chapter learns together.",
+      "summary": "Plan and run the chapter's core learning programs — Study Jams, workshops, and skill sessions — so every session actually lands.",
+      "responsibilities": [
+        "Plan and run the chapter's core learning programs, especially Study Jams.",
+        "Work with the Campus Lead to design and schedule sessions through the semester.",
+        "Track what's working and adjust format or pace based on turnout and feedback.",
+        "Pitch sessions right for whoever's in the room — from first-years to final-years."
+      ],
+      "question": {
+        "id": "learning-topic",
+        "label": "Describe a topic or skill you'd want to run a session on, and how you'd structure it for beginners.",
+        "placeholder": "e.g. Git & GitHub for first-timers — a 60-minute hands-on session where..."
+      }
+    },
+    {
+      "id": "women-in-tech-lead",
+      "title": "Women in Tech Lead",
+      "tagline": "Make sure tech feels open to every woman on campus.",
+      "summary": "Champion gender diversity across the chapter and build a space where women feel comfortable showing up, asking questions, and taking the lead.",
+      "responsibilities": [
+        "Champion gender diversity and inclusion across all chapter activities.",
+        "Build a space where women feel comfortable participating and taking the lead.",
+        "Plan initiatives, events, or partnerships that support women in tech on campus.",
+        "Represent the chapter in wider women-in-tech community efforts."
+      ],
+      "question": {
+        "id": "wit-barrier",
+        "label": "What's one barrier you've noticed that keeps women from participating in tech spaces on campus, and how would you address it?",
+        "placeholder": "Share something you've actually observed, not just a general statement..."
+      }
+    },
+    {
+      "id": "outreach-lead",
+      "title": "Outreach Lead",
+      "tagline": "Get the word out and tell the chapter's stories.",
+      "summary": "Grow the chapter's visibility on campus, and spot and share the interesting things makers in the community are building.",
+      "responsibilities": [
+        "Build and run outreach strategy to grow the chapter's visibility on campus and beyond.",
+        "Spot interesting projects and makers in the community and help tell their story.",
+        "Own the chapter's social presence — Instagram, LinkedIn, and campus promotion.",
+        "Build partnerships with other clubs, communities, and departments."
+      ],
+      "question": {
+        "id": "outreach-pitch",
+        "label": "Pitch us a one-line idea for a post or campaign that would get students curious about TinkerHub.",
+        "placeholder": "Keep it punchy — one sentence is enough."
+      }
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "Fraunces", serif;
+  --font-body: "Work Sans", sans-serif;
+  --font-hand: "Caveat", cursive;
+  /* Playful palette */
+  --accent-1: #FF6B6B; /* coral */
+  --accent-2: #FFD166; /* warm yellow */
+  --accent-3: #4ED6C8; /* teal */
+  --accent-4: #6A5ACD; /* violet */
+  --muted-paper: #FCF9F1;
+  /* animation speed tokens */
+  --anim-speed-float: 6s;
+  --anim-speed-swing: 3.6s;
+  --anim-speed-bubble: 7s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F6F1E6;
+  color: #2B241C;
+}
+
+:focus-visible {
+  outline: 2px solid #B04A2E;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Signature element: an editorial "notebook" card — warm paper card, a
+   torn/soft top edge suggestion via border, and room for a handwritten
+   annotation tag in the corner. Used for the lead profile and events. */
+.note-card {
+  position: relative;
+  background: #FCF9F1;
+  border: 1px solid #DED2B8;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 0 rgba(43,36,28,0.04), 0 12px 28px -14px rgba(43,36,28,0.22);
+}
+
+/* A handwritten-style tag, like a sticky note scribble, positioned in the
+   corner of a card. */
+.hand-tag {
+  font-family: var(--font-hand);
+  color: #B04A2E;
+  transform: rotate(-4deg);
+  display: inline-block;
+}
+
+/* Underline drawn like a marker stroke under a word or phrase, instead of
+   a straight CSS border — the signature "human" touch on headlines. */
+.marker-underline {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 16' preserveAspectRatio='none'%3E%3Cpath d='M2 10 C 40 4, 80 14, 120 8 S 180 4, 198 9' stroke='%23D9A441' stroke-width='6' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 0 88%;
+  background-size: 100% 0.5em;
+  padding-bottom: 0.05em;
+}
+
+.stitch-divider {
+  border: none;
+  border-top: 1.5px dashed #DED2B8;
+}
+
+.paper-grain {
+  background-image: radial-gradient(circle at 1px 1px, rgba(43,36,28,0.045) 1px, transparent 0);
+  background-size: 16px 16px;
+}
+
+.marquee-banner {
+  position: relative;
+}
+
+.marquee-track {
+  animation: marquee-scroll 16s linear infinite;
+}
+
+/* Floating / subtle motion */
+@keyframes floaty {
+  0% { transform: translateY(0) translateX(0) rotate(-1deg); }
+  50% { transform: translateY(-8px) translateX(4px) rotate(1deg); }
+  100% { transform: translateY(0) translateX(0) rotate(-1deg); }
+}
+
+@keyframes swing {
+  0% { transform: rotate(-6deg); }
+  50% { transform: rotate(6deg); }
+  100% { transform: rotate(-6deg); }
+}
+
+@keyframes bubble-move {
+  0% { transform: translateY(0) translateX(0) scale(1); opacity: 0.9; }
+  50% { transform: translateY(-40px) translateX(10px) scale(1.06); opacity: 0.8; }
+  100% { transform: translateY(0) translateX(0) scale(1); opacity: 0.9; }
+}
+
+.decor-bubble {
+  position: absolute;
+  border-radius: 999px;
+  opacity: 0.9;
+  mix-blend-mode: multiply;
+  will-change: transform, opacity;
+}
+
+.hang-swing {
+  display: inline-block;
+  animation: swing var(--anim-speed-swing) ease-in-out infinite;
+  transform-origin: center top;
+}
+
+.floaty {
+  animation: floaty var(--anim-speed-float) ease-in-out infinite;
+}
+
+.bubble-1 { width: 88px; height: 88px; background: linear-gradient(135deg,var(--accent-1),var(--accent-2)); }
+.bubble-2 { width: 56px; height: 56px; background: linear-gradient(135deg,var(--accent-3),var(--accent-4)); }
+.bubble-3 { width: 40px; height: 40px; background: linear-gradient(135deg,var(--accent-2),var(--accent-3)); }
+
+.site-decor-container { position: relative; overflow: visible; }
+
+/* User-controlled motion toggle: add `.motion-disabled` on <html> to disable animations */
+.motion-disabled *, .motion-disabled *::before, .motion-disabled *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}
+
+/* expose animation speed helpers for easy tweaking */
+:root {
+  --anim-speed-fast: 300ms;
+  --anim-speed-medium: 600ms;
+  --anim-speed-slow: 1200ms;
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

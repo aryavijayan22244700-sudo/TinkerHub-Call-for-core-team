@@ -1,0 +1,30 @@
+{
+  "upcoming": [
+    {
+      "id": "core-team-call",
+      "title": "Call for Core Team",
+      "date": "2026-07-08",
+      "type": "Recruitment",
+      "description": "Applications open for Learning Coordinator, Women in Tech Lead, and Outreach Lead. Join the founding core team of TinkerHub SNGCET.",
+      "location": "SNGCET Campus"
+    },
+    {
+      "id": "intro-workshop",
+      "title": "Intro to Tinkering: First Build Night",
+      "date": "2026-07-20",
+      "type": "Workshop",
+      "description": "A no-experience-needed evening of small hardware and software builds to kick off the chapter.",
+      "location": "CSE Seminar Hall"
+    }
+  ],
+  "past": [
+    {
+      "id": "chapter-launch",
+      "title": "TinkerHub SNGCET — Chapter Launch",
+      "date": "2026-06-15",
+      "type": "Meetup",
+      "description": "The first-ever TinkerHub SNGCET gathering, introducing the chapter's mission to the campus.",
+      "location": "SNGCET Auditorium"
+    }
+  ]
+}

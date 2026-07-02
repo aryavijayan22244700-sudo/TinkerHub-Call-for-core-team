@@ -1,0 +1,12 @@
+{
+  "name": "Arya Vijayan",
+  "role": "Campus Lead",
+  "chapter": "TinkerHub SNGCET",
+  "bio": "Computer Science Engineering student at SNGCET, building TinkerHub's campus chapter from the ground up. Focused on hands-on learning, community-first events, and making tech feel approachable for every student on campus.",
+  "photo": "/lead-placeholder.svg",
+  "social": [
+    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/arya-vijayan-15068030a", "icon": "linkedin" },
+    { "label": "Instagram", "url": "https://www.instagram.com/ary_a_vj?igsh=c3Btb2Q2ZjltcXVv", "icon": "instagram" },
+    { "label": "Email", "url": "mailto:aryaparayullakandy@gmail.com", "icon": "mail" }
+  ]
+}

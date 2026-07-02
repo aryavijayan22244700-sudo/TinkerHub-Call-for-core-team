@@ -1,0 +1,16 @@
+<svg width="640" height="480" viewBox="0 0 640 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="480" rx="36" fill="#FCF9F1"/>
+  <rect x="68" y="84" width="504" height="312" rx="24" fill="#F6EBD8"/>
+  <rect x="112" y="132" width="180" height="124" rx="18" fill="#B04A2E"/>
+  <rect x="334" y="132" width="176" height="88" rx="18" fill="#2B241C"/>
+  <rect x="334" y="242" width="176" height="102" rx="18" fill="#D9A441"/>
+  <circle cx="202" cy="308" r="44" fill="#2B241C"/>
+  <rect x="150" y="316" width="104" height="64" rx="16" fill="#2B241C"/>
+  <circle cx="458" cy="326" r="44" fill="#B04A2E"/>
+  <rect x="406" y="334" width="104" height="56" rx="16" fill="#B04A2E"/>
+  <path d="M238 170C238 147.909 255.909 130 278 130H308C330.091 130 348 147.909 348 170V188H238V170Z" fill="#FCF9F1"/>
+  <path d="M266 182H320V208C320 220.703 310.703 230 298 230H288C275.297 230 266 220.703 266 208V182Z" fill="#FCF9F1"/>
+  <path d="M268 188H318" stroke="#2B241C" stroke-width="8" stroke-linecap="round"/>
+  <path d="M284 230V260" stroke="#2B241C" stroke-width="8" stroke-linecap="round"/>
+  <path d="M300 230V260" stroke="#2B241C" stroke-width="8" stroke-linecap="round"/>
+</svg>
