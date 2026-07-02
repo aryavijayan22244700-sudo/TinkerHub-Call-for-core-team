@@ -5,7 +5,6 @@ import { AuthProvider } from "@/context/AuthContext";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AnnouncementBanner from "@/components/AnnouncementBanner";
-import MotionToggle from "@/components/MotionToggle";
 
 const display = Fraunces({
   subsets: ["latin"],
@@ -46,7 +45,6 @@ export default function RootLayout({
         <AuthProvider>
           <AnnouncementBanner />
           <Navbar />
-          <MotionToggle />
           <main className="min-h-screen">{children}</main>
           <Footer />
         </AuthProvider>

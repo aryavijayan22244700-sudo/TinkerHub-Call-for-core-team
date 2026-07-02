@@ -58,19 +58,6 @@ export default function Navbar() {
         </div>
 
         {/* Mobile toggle */}
-        <button
-          className="flex h-10 w-10 items-center justify-center rounded-card border border-line md:hidden"
-          onClick={() => setOpen((v) => !v)}
-          aria-expanded={open}
-          aria-label="Toggle menu"
-        >
-          <span className="sr-only">Toggle menu</span>
-          <div className="flex flex-col gap-1.5">
-            <span className={`h-0.5 w-5 bg-ink transition-transform ${open ? "translate-y-2 rotate-45" : ""}`} />
-            <span className={`h-0.5 w-5 bg-ink transition-opacity ${open ? "opacity-0" : ""}`} />
-            <span className={`h-0.5 w-5 bg-ink transition-transform ${open ? "-translate-y-2 -rotate-45" : ""}`} />
-          </div>
-        </button>
       </nav>
 
       {/* Mobile menu */}
